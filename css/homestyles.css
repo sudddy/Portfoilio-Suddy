@@ -1,0 +1,317 @@
+::selection{
+background-color: #1372D5;	
+	font-family: 'Play', sans-serif;
+}
+
+.glyphicon-images
+        {
+            font-size:35px;
+			padding-left:10px;
+			padding-right:10px;
+			color: #b98f4c;
+			
+        }
+.glyphicon-images:hover {
+    
+	text-decoration: none !important;
+	color:#65C8DF;
+	
+}
+
+.join
+	 {
+		 position: relative;
+		 width:100%;
+	 }
+
+
+.name-1
+	 {
+		 background-color: #045695;
+		 position: absolute;
+		 color: floralwhite;
+		 width: auto;
+		 height:auto;
+		 top:100px;
+		 float:right;
+		 right:0;
+		 font-family: 'Play', sans-serif;
+		 font-weight: 100;
+		 padding:25px;
+		 border-radius: 2px;
+	 }
+.combine
+	 {
+		 position: relative; 
+		 width: 100%;
+	 }
+ .social
+	 {
+		  position: absolute; 
+   		  top:400px;
+   		  left: 0;
+		  
+		  
+	 }
+ .name-2
+	 {
+		 width: auto;
+		 height:auto;
+		 padding:25px;
+		 position: absolute;
+		 background-color: black;
+		 color: floralwhite;
+		 top:100px;
+		 left:0;
+		 font-family: 'Play', sans-serif;
+		  border-radius: 2px;
+	 }
+ .work
+	 {
+		 width: auto;
+		 height: auto;
+		 position: absolute;
+		 background-color: White;
+		 color: black;
+		 top: 202px;
+		 padding:20px;
+		 padding-right: 90px;
+		 padding-left: 25px;
+		 left:0;
+		 font-family: 'Play', sans-serif;
+		  border-radius: 2px;
+	 }
+
+.name-style
+	 {
+		 font-size: 35px;
+		 margin-top:5px;
+	 }
+.social-media{
+	display:none;
+	color: #ffffff;
+	background-color: #000000;
+  	text-align: center;
+	width: 130px;
+  	padding: 10px;
+	position: absolute;
+	z-index:9999;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin-left:-20px;
+}
+
+li a>i:hover + .social-media
+{
+	display: block;
+	position: absolute;
+  	transform: translate3d(0, 0, 0);
+  	backface-visibility: hidden;
+  	perspective: 1000px;
+	margin-top:-90px;
+	
+
+    
+}
+
+
+@media only screen and (min-width: 999px) { 
+ font-family: 'Play', sans-serif;
+
+/*.parent-content{
+  width: 100%;
+position:relative;
+height:100%;
+}*/
+
+
+.small-device-name
+	 {
+		 display:none;
+	 }
+ }
+
+@media only screen and (max-width: 999px) { 
+
+.social,.name-2,.work
+	 {
+   		  left: 90px; 	  
+	 }
+.Larger-device-name
+	{
+		display:none;
+	}
+
+.small-name-1
+	{
+		 background-color: #045695;
+		 position: absolute;
+		 color: floralwhite;
+		 width: auto;
+		 display: block;
+		 height:auto;
+		 top:100px;
+		 left: 20px;
+		 font-family: 'Play', sans-serif;
+		 padding:25px;
+		 float:left;
+	}
+.name-2
+	{
+		left: 235px;
+		float:left;
+	}
+.work{
+	left:20px;
+	padding-right: 106px;
+	padding-left:110px;
+	top:202px;
+}
+
+
+}
+
+
+
+
+@media only screen and (max-width: 750px){
+.Larger-device-name
+	{
+		display:none;
+	}
+
+.small-name-1
+	{
+		 background-color: #045695;
+		 position: absolute;
+		 color: floralwhite;
+		 width: auto;
+		 display: block;
+		 height:auto;
+		 top:100px;
+		 left: 20px;
+		 font-family: 'Play', sans-serif;
+		 padding:10px;
+		 font-size: 20px;
+		 float:left;
+		 padding-right: 50px;
+		
+	}
+.name-2
+	{
+		left: 20px;
+		padding:10px;
+		font-size:20px;
+		top:171px;
+		padding-right: 90px;
+	   
+	}
+.work{
+	left:20px;
+	top:243px;
+	padding:10px;
+	padding-left:20px;
+	padding-right:80px;
+	padding-top:20px;
+	padding-bottom:20px; 
+}
+
+.text-name{
+	margin-left:10px;
+}
+.social
+	{
+		left:50px;
+		
+	}
+}
+
+@media only screen and (max-width: 450px){
+
+.Larger-device-name
+	{
+		display:none;
+	}
+
+.small-name-1
+	{
+		 background-color: #045695;
+		 position: absolute;
+		 color: floralwhite;
+		 width: auto;
+		 display: block;
+		 height:auto;
+		 top:100px;
+	     left:0px;	 
+		 font-family: 'Play', sans-serif;
+		 padding:5px;
+		 font-size: 10px;
+		 float:left;
+		 padding-right:10px;
+		
+	}
+.name-2
+	{
+		
+		padding:5px;
+		font-size:5px;
+		top:161px;
+		padding-right: 30px;
+		 left:0px;	 
+	   
+	}
+.work{
+	
+	top:222px;
+	padding-right:10px;
+	padding-top:10px;
+	padding-bottom: 10px;
+	padding-left:16px;
+	left:0px;
+		 
+}
+
+.text-name{
+	margin-left:10px;
+}
+.social
+	{
+		left:0px;
+		
+	}
+.glyphicon-images
+	{
+		font-size:20px;
+		padding-left:10px;
+		padding-right:10px;
+		color: #000;
+	}
+h6
+	{
+		left:0px;
+	}
+}
+
+
+
+/*Animations */
+
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, -1px, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(0px, 1px, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(0px, -1px, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(0px, 2px, 0);
+  }
+}
+

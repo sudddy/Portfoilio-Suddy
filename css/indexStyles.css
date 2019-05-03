@@ -1,0 +1,116 @@
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #045695 ;
+	border-radius: 3px;
+}
+
+@keyframes slideInFromLeft {
+	0% {
+	  transform: translateX(-100%);
+	}
+	100% {
+	  transform: translateX(0);
+	}
+  }
+  
+  .content-2 {  
+	/* This section calls the slideInFromLeft animation we defined above */
+	animation: 1s ease-out 0s 1 slideInFromLeft;
+
+  }
+
+.main{
+	
+	width:100%;
+	position:relative;
+}
+@media only screen and (min-width: 1200px){
+
+ .content-0{
+	float:left;
+	z-index:99;
+	height:100%;
+	border-style: dashed;
+	border-color: yellow;
+	width: 5em;
+	display: inline-block; 
+}
+
+/* 	 
+.content-1
+	 {
+		 width: 45.8%;
+		  /* margin-left:5.1em; 
+		 border-style: dashed;
+		 border-color: green;
+		 height:100%;
+		  float:right;  
+		 display: inline-block;
+		}  */
+
+.content-2
+{
+	border-style: dashed;
+	border-color: red;
+	float:right;
+	height:100%;
+	width:95%;
+	overflow-x: scroll;
+	position: fixed;
+	display: inline-block;
+}
+}
+
+@media screen and (min-width: 400px) and (max-width: 767.98px)  {
+.content-0{
+    float:left;
+	position: fixed;
+	z-index:999;
+	height:100%; 
+	
+}
+/* .content-1{
+	margin-left: 4.7em;
+	height:50%;
+
+} */
+.Content-2{
+	
+	float:right;
+	margin-left: 4.7em;
+
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+.content-0{
+    float:left;
+	position: fixed;
+	/*z-index:999;*/
+	height:100%; 
+	
+}
+/* .content-1{
+	margin-left: 4.8em;
+	height:50%;
+
+} */
+.Content-2{
+	margin-left:  4.8em;
+	float:right;
+
+
+}
+}

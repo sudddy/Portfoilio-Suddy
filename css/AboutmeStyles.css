@@ -1,0 +1,184 @@
+::-webkit-scrollbar-track {
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+     background-color: #F5F5F5;
+}
+ ::-webkit-scrollbar {
+     width: 5px;
+     background-color: #F5F5F5;
+}
+ ::-webkit-scrollbar-thumb {
+     background-color: #045695 ;
+     border-radius: 3px;
+}
+ ::selection{
+     background-color: #1372D5;
+     font-family: 'Play', sans-serif;
+}
+ h4{
+     font-family: 'Play', sans-serif;
+}
+ img {
+     zoom:auto;
+}
+
+ .ul-table{
+     font-family: 'Play', sans-serif;
+     list-style: none;
+     padding: 0;
+     position: relative;
+}
+}
+ .table-left {
+     float: left;
+     padding-bottom: 9px;
+}
+ .slide-hide {
+    display:none
+}
+ .table-right {
+     float: right;
+     padding-right:10px;
+     padding-bottom: 9px;
+}
+ .ul-table li {
+     display: inline-block;
+     width:100%;
+     padding-left: 0px;
+     margin-bottom: 10px;
+     font-size: 14px;
+     word-spacing: 0.1em;
+}
+ .line {
+     width:90px;
+     height:3px;
+     display: flex;
+     background-color: #045695;
+}
+ .jumbotron {
+     background-color: #FBFBFB;
+     font-family: 'Play', sans-serif;
+}
+ .card-width {
+     box-shadow: 2px 2px 2px 1px #888888;
+}
+ .phase-2 {
+     padding-left: 25px;
+}
+ .hireme{
+     padding-left:50px;
+     padding-right:50px;
+}
+ p{
+     font-family: 'Play', sans-serif;
+}
+ .hire-me-but {
+     background-color:#045695;
+     color:#fff;
+     padding-top:5px;
+     padding-bottom:5px;
+     padding-left:45px;
+     padding-right:45px;
+     border-radius: 5px;
+}
+ .hire-me-but:hover{
+     background-color: #fff;
+     color:#045695;
+     border-color: black;
+}
+ .resume-but {
+     background-color:#045695;
+     color:#eee;
+     padding-top:5px;
+     padding-bottom:5px;
+     padding-left:45px;
+     padding-right:45px;
+     border-radius: 5px;
+}
+ .resume-but:hover{
+     background-color: #fff;
+     color:#045695;
+     border-color: black;
+}
+ .well {
+     padding-left:10px;
+     padding-right:10px;
+     margin-left: 10px;
+     margin-right:10px;
+}
+ .what-i-do {
+     padding:40px;
+}
+ .card2{
+     margin-top: 40px;
+}
+/* From here the media screeen starts .... !!!!!! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1 !!!!!!!!!!!!!!!!!!!!!!!!!11 */
+ @media only screen and (min-width: 1200px) {
+     font-family: 'Play', sans-serif;
+     
+     .phase-1 {
+        /*border-style: dashed;
+         border-color: yellow;
+        */
+         padding-right: 20px;
+         margin-top:-30px;
+         height: 220px;
+    }
+     .ul-table{
+         padding: 50px;
+    }
+     .line-in-table {
+         width: 100%;
+         height:0.5px;
+         display: flex;
+         background-color:#949494;
+         opacity: 0.3;
+    }
+     .visibility {
+         display: none;
+    }
+}
+/* From here the media screeen 961 starts .... !!!!!! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1 !!!!!!!!!!!!!!!!!!!!!!!!!11 */
+ @media only screen and (max-width: 1200px) {
+   
+     .ul-table{
+         padding: 50px;
+    }
+     .line-in-table {
+         width: 100%;
+         height:0.5px;
+         display: flex;
+         background-color:#949494;
+         opacity: 1;
+    }
+}
+/* From here the media screeen 560 starts .... !!!!!! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1 !!!!!!!!!!!!!!!!!!!!!!!!!11 */
+ @media only screen and (max-width: 720px) {
+    
+     .ul-table{
+         padding-left: 25px;
+         text-align: center;
+    }
+     .table-right, .table-left {
+         width: 100%;
+         float: left;
+    }
+     .line-in-table {
+         width: 100%;
+         height:0.5px;
+         display: flex;
+         background-color: #949494;
+         opacity: 1;
+    }
+     .jumbotron {
+         height:250px;
+         background-color: #fbfbfb;
+         font-family: 'Play', sans-serif;
+    }
+     .about{
+         height: 280px;
+    }
+     .resume-but {
+         margin-top:5px;
+    }
+}
+ 

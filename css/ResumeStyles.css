@@ -1,0 +1,194 @@
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #045695 ;
+	border-radius: 3px;
+}
+
+
+::selection{
+     background-color: #1372D5;	
+	font-family: 'Play', sans-serif;
+}
+img {
+	zoom:auto;
+}
+.line-resume
+	 {
+		 width:90px;
+		 height:3px;
+		 display: flex;
+		 background-color:  #045695;
+	 }
+.line-in-resume
+{
+	  width:300px;
+	  height: 1.5px;
+	  display:flex;
+	  margin-left: 30px;
+	  background-color:  gray;
+	
+}
+#Title-resume
+{
+	font-size: 20px;
+	font-family: 'Play', sans-serif;
+	font-stretch: expanded;
+	font-weight: 300;
+	padding-left: 30px;
+	padding-top: 0px;
+	margin-top:-50px;
+	color: #340974;
+	display: block;
+	
+}
+
+#period-resume
+{
+	font-size: 14px;
+	font-family: 'Play', sans-serif;
+	padding-left: 32px;
+	margin-top: -10px;
+	color: gray;
+}
+#exp-resume
+{
+	padding-left:30px;
+	font-size: 15px;
+	font-family: 'Play', sans-serif;
+}
+
+.common-resume
+{
+	height: 200px;
+}
+.school-resume{
+	height:550px;
+}
+
+.skill-progress-resume
+{
+	
+	padding-left: 100px;
+	padding-right: 100px;
+	
+}
+
+a{
+	font-family: 'Play', sans-serif;
+}
+
+
+img
+{
+	z-index:auto;
+	position: relative;	
+	width: auto;
+	
+}
+
+
+@media only screen and (min-width: 1200px){
+/* img
+	 {
+		 height:100%;
+		
+	 }*/
+
+}
+
+
+
+
+
+
+
+
+/* From here the media screeen 961 starts .... !!!!!! 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+!!!!!!!!!!!!!!!!!!!!!!!!!11 */
+
+
+@media only screen and (max-width: 1200px) { 
+
+	.modal-dialog
+	{
+		padding-left:100px;
+	}
+
+	.school-resume{
+	height:500px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	
+}
+	
+}
+
+
+/* From here the media screeen 560 starts .... !!!!!! 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+!!!!!!!!!!!!!!!!!!!!!!!!!11 */
+
+@media only screen and (max-width: 520px)  { 
+
+
+
+	.heading-resume
+	 {
+		 height:250px;
+		 background-color: #fbfbfb;
+		 font-family: 'Play', sans-serif;
+	 }
+	.common-resume
+	{
+		height:400px;
+		overflow-y: scroll;
+	}
+	
+.line-in-resume
+{
+	  width:130px;
+	  height: 1px;
+	  display:flex;
+	  margin-left: 30px;
+	  background-color: gray;
+	
+}
+
+.school-resume{
+	height:500px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	
+}
+
+.skill-progress-resume
+{
+	
+	padding-left: 30px;
+	padding-right: 30px;
+	
+}
+
+#Title-resume
+	{
+		margin-top:0px;
+	}
+
+
+}
