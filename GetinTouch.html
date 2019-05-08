@@ -1,7 +1,9 @@
+<div ng-controller="contactController">
 <div class="content-0">
+   
       <div id="navbar">
          <ul class="side-nav-bar">
-            <li style="background-color:#045695;"> <span class="glyphicon-navbar img-responsive"></span></li>
+            <li style="background-color:#045695;"> <span class="glyphicon-navbar img-responive"></span></li>
             <li>
                <a  href="#">
                <div class="text-flip">HOME</div>
@@ -52,43 +54,44 @@
      <img  class="img-responsive image visible-lg"  src="Images/img5.jpg" >
       <img class="img-responsive  hidden-lg" style="" src="Images/img5.jpg"> -->
 </div> 
-<div class="Content-2">
-   <div class="phase-0">
-      <div class="jumbotron" style="background-color: #FBFBFB;">
+<div class="Content-2" >
+   <div class="phase-0" data-aos="zoom-in">
+      <div class="jumbotron" style="background-color: #FBFBFB;" >
          <h3> <b>CONTACT ME</b></h3>
+         <div><h1>{{message}}</h1></div>
          <div class="line"></div>
          <br>
          <p style="font-size: 15px;float:left">
-            Feel free to contact me anytime regarding work/problem or even just to say "Hello!" 
+            Feel Free to contact me anytime regarding work/problem or even just to say "Hello!" 
          </p>
       </div>
    </div>
-   <div class="phase-2" >
-      <ul class="ul-table">
+   <div class="phase-2" data-aos="zoom-in">
+      <ul class="ul-table" >
          <li>
             <div class="table-left"><span class="glyphicon glyphicon-phone"></span><b>&nbsp;&nbsp;Phone</b></div>
-            <div class="table-right">+91-9940367319</div>
+            <div class="table-right">{{personalDetails.phone}}</div>
             <div class="line-in-table"></div>
          </li>
          <li>
             <div class="table-left"><span class="glyphicon glyphicon-envelope"></span><b>&nbsp;&nbsp;E-mail</b></div>
-            <div class="table-right">Suddpro@gmail.com
+            <div class="table-right">{{personalDetails.email}}
             </div>
             <div class="line-in-table"></div>
          </li>
          <li>
             <div class="table-left"><span class="glyphicon glyphicon-home"></span><b>&nbsp;&nbsp;Home</b></div>
-            <div class="table-right">044-22250565</div>
+            <div class="table-right">{{personalDetails.homePhone}}</div>
             <div class="line-in-table"></div>
          </li>
          <li>
             <div class="table-left"><span class="glyphicon glyphicon-globe"></span><b>&nbsp;&nbsp;Address</b></div>
-            <div class="table-right">44<SUP>TH</SUP>Street Nanganallur</div>
+            <div class="table-right">{{personalDetails.address}}</div>
             <div class="line-in-table"></div>
          </li>
       </ul>
    </div>
-   <div class="jumbotron" style="background-color: #FBFBFB;">
+   <div class="jumbotron" style="background-color: #FBFBFB;" data-aos="zoom-in">
       <h3><b> LET'S STAY IN TOUCH</b></h3>
       <div class="line"></div>
       <br>
@@ -96,43 +99,43 @@
          When you are here, Drop a mail and let's get in touch.  
       </p>
    </div>
-   <div class="phase-1">
+   <div class="phase-1" >
       <form action="contact.php" method="post">
-         <div class="input-group">
+         <div class="input-group" data-aos="zoom-in">
             <span class="input-group-addon"  id="sizing-addon1" >
             <span class="glyphicon glyphicon-user"></span>   
             </span>
             <input type="text"  name="Name" class="form-control"  placeholder="Name" aria-describedby="sizing-addon1" required> 
          </div>
          <br>
-         <div class="input-group">
+         <div class="input-group" data-aos="zoom-in">
             <span class=" input-group-addon"  id="sizing-addon2" >
             <span class="glyphicon glyphicon-envelope"></span> 
             </span>
             <input type="text" name="Email" class="form-control" placeholder="E-mail" aria-describedby="sizing-addon1" required>
          </div>
          <br>
-         <div class="input-group">
+         <div class="input-group" data-aos="zoom-in">
             <span class=" input-group-addon"  id="sizing-addon3" >
             <span class="glyphicon glyphicon-link"></span>
             </span>
             <input type="text" name="website" class="form-control" placeholder="Website" aria-describedby="sizing-addon1" required>
          </div>
          <br>
-         <div class="input-group">
+         <div class="input-group" data-aos="zoom-in">
             <span class=" input-group-addon "  id="sizing-addon4" >
             <span class="glyphicon glyphicon-text-size"></span>
             </span>
             <textarea rows="4"  name="Message" class="form-control" name="Enter the Message" aria-describedby="sizing-addon1" required>Enter the Message </textarea>
          </div>
          <br>    
-         <div class="button">
-            <input type="submit" value="Leave a message" class="sendbutton">         
+         <div class="button" data-aos="zoom-in">
+            <input type="submit" value="Leave a message" onclick="getRequest()" class="sendbutton">         
          </div>
       </form>
    </div>
 <br><br><br>
-<div class="panel-default">
+<div class="panel-default" data-aos="zoom-in">
           <div class="panel-footer">
               <p class="text-center"><i class="fa fa-copyright"></i> Chiseled by sudharsan</p>
               </div> 
@@ -142,3 +145,5 @@
 
 
 <a id="backtotop" href="#" class="btn btn-primary btn-lg backtotop" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+</div>

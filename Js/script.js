@@ -1,20 +1,3 @@
-// function openNav() {
-//     document.getElementById("mySidenav").style.width = "250px";
-//     document.getElementById("main").style.marginLeft = "250px";
-// }
-
-//  Set the width of the side navigation to 0 and the left margin of the page content to 0 
-// function closeNav() {
-//     document.getElementById("mySidenav").style.width = "0";
-//     document.getElementById("main").style.marginLeft = "0";
-// }\
-
-
-// script.js
-
-    // create the module and name it scotchApp
-
-    // create the controller and inject Angular's $scope
 
     var scotchApp = angular.module('scotchApp', ['ngRoute']);
     scotchApp.controller('mainController', function($scope) {
@@ -50,7 +33,7 @@
             // route for the contact page
             .when('/GetinTouch', {
                 templateUrl : 'GetinTouch.html',
-                controller  : 'Getintouch'
+                controller  : 'contactController'
             });
     });
 
@@ -64,6 +47,19 @@
         $scope.message = 'Look! I am an about page.';
     });
 
-    scotchApp.controller('contactController', function($scope) {
-        $scope.message = 'Contact us! JK. This is just a demo.';
+    scotchApp.controller('contactController', function($scope,$http) {
+        var personalDetails;
+        // $scope.message = 'Contact us! JK. This is just a demo.';
+        $http.get("http://localhost:4000/getDetails").then(function(response) {
+            personalDetails = response.data[0];  
+            $scope.personalDetails = response.data[0];
+            console.log($scope.personalDetails.homePhone);
     });
+    
+    });
+
+
+
+
+
+    
